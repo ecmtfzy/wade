@@ -1,0 +1,8 @@
+# This repository publishes the rendered deck only.
+# Everything else in this folder stays local unless it is listed below.
+/*
+!/.gitignore
+!/.nojekyll
+!/index.html
+!/slides.html
+!/slides.pdf
