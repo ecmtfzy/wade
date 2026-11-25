@@ -808,6 +808,8 @@ height: 10px; transform: translateY(-50%) scaleY(var(--line-scale)); background:
 .reveal table.relax { font-size: .87em; }
 .reveal table.relax td.hl { font-weight: 400; }
 
+.reveal #relaxed table.relax { margin-top: 3.9em; }
+
 .reveal #simulation img, .reveal #sim-coverage img { max-height: 385px; }
 .reveal #simulation .fig-labels, .reveal #sim-coverage .fig-labels { font-size: 1.222em; }
 .reveal #sim-coverage .fig-labels { --line-scale: .335; }
@@ -1535,7 +1537,7 @@ Fangzhou Yu
 <ol type="a">
 <li><strong>Consistency:</strong> <span class="math inline">\(Y=Y(D)\)</span></li>
 <li><strong>Mean independence:</strong> <span class="math inline">\(\E[Y(d)\mid D,X]=\E[Y(d)\mid X]\equiv m(d,X)\)</span> for all <span class="math inline">\(d\)</span></li>
-<li><strong>Absolute continuity:</strong> <span class="math inline">\(m(\cdot,x)\)</span> is absolutely continuous on <span class="math inline">\([\underline d(x),\overline d(x)]\)</span>, gaps included, where <span class="math inline">\(\underline d(x)=\inf\mathcal D(x)\)</span> and <span class="math inline">\(\overline d(x)=\sup\mathcal D(x)\)</span> for the support <span class="math inline">\(\mathcal D(x)\)</span> of <span class="math inline">\(D\)</span> given <span class="math inline">\(X=x\)</span></li>
+<li><strong>Absolute continuity:</strong> <span class="math inline">\(m(\cdot,x)\)</span> is absolutely continuous on <span class="math inline">\([\underline d(x),\overline d(x)]\)</span>, where <span class="math inline">\(\underline d(x)=\inf\mathcal D(x)\)</span> and <span class="math inline">\(\overline d(x)=\sup\mathcal D(x)\)</span> for the support <span class="math inline">\(\mathcal D(x)\)</span> of <span class="math inline">\(D\)</span> given <span class="math inline">\(X=x\)</span></li>
 <li><strong>Dominated derivative:</strong> <span class="math inline">\(|\partial_d m(d,x)|\le L(d,x)\)</span> with <span class="math inline">\(\E\big[\int|W_\alpha(d,X)|\,L(d,X)\,\mathrm dd\big]&lt;\infty\)</span></li>
 </ol>
 </div>
@@ -1560,7 +1562,6 @@ Fangzhou Yu
 </table>
 <ul>
 <li><strong>Selection on variance</strong> is allowed by mean independence</li>
-<li>Precision weighting stays causal under such sorting</li>
 </ul>
 </section>
 <section id="prop2" class="slide level2 tight" data-timing="75">
