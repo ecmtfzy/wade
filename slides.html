@@ -1699,7 +1699,11 @@ Fangzhou Yu
 </section>
 <section id="bilinear" class="slide level2 tight" data-timing="60">
 <h2>Conditions for asymptotic normality</h2>
-<p>With errors <span class="math inline">\(\Delta\omega=\widehat\omega-\omega_0\)</span> and <span class="math inline">\(\Delta\mu=\widehat\mu-\mu_0\)</span>, <span class="math display">\[\E\big[\omega_{\db}(\widehat\omega,\widehat\mu)\mid D,X\big]=\omega_0-\underbracket{\big(\Delta\omega^2/\omega_0+\widehat\omega^2\Delta\mu^2\big)}_{\mathclap{\class{alert}{\text{multiplied by }(D-\widehat{e\mkern1mu}_\omega)^2\text{ in }B_{\aug}}}}\]</span></p>
+<ul>
+<li><strong>Standard DML:</strong> the remainder is a product of two nuisance errors, so <span class="math inline">\(o_P(n^{-1/4})\)</span> rates suffice</li>
+<li><strong>Debiasing <span class="math inline">\(\omega\)</span></strong> adds squared errors of <span class="math inline">\(\widehat\omega\)</span> and <span class="math inline">\(\widehat\mu\)</span>, multiplied by the unbounded <span class="math inline">\((D-\widehat{e\mkern1mu}_\omega)^2\)</span></li>
+<li><strong>Two ways out:</strong> bound the variables (Condition A) or weight the rates (Condition B)</li>
+</ul>
 <div class="theorem">
 <div class="theorem-title">
 <p>Theorem 3 <em>(Asymptotic normality)</em></p>
