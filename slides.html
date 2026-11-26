@@ -1601,7 +1601,7 @@ Fangzhou Yu
 <p>All three optima are projections, with <span class="math inline">\(\rho_\omega(x)=\E[\omega\mu\mid X=x]/\E[\omega\mid X=x]\)</span>: <span class="math display">\[\tau^*_\omega=\frac{\E[\omega\,(D-e_\omega)(\mu-\rho_\omega)]}{\E[\omega\,(D-e_\omega)^2]}\]</span></p>
 <ul>
 <li>Errors in <span class="math inline">\(e_\omega,\rho_\omega\)</span> drop out at first order</li>
-<li>The error in <span class="math inline">\(\widehat\omega=1/\widehat\sigma^2\)</span> does not. Debias it:</li>
+<li>The errors in <span class="math inline">\(\widehat\mu\)</span> and <span class="math inline">\(\widehat\omega=1/\widehat\sigma^2\)</span> do not: <span class="math inline">\(\mu\)</span> is corrected by the <span class="math inline">\(Y-\mu\)</span> term, <span class="math inline">\(\omega\)</span> by debiasing:</li>
 </ul>
 <p><span class="math display">\[\omega_{\db}=\underbracket{2\omega-\omega^2(Y-\mu)^2}_{\mathclap{\class{teal}{\text{one Newton step toward }1/\sigma^2}}},\qquad \E\big[\omega_{\db}(\widehat\omega)\mid D,X\big]=\omega-\frac{(\widehat\omega-\omega)^2}{\omega}\]</span></p>
 <div class="theorem">
